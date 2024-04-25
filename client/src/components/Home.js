@@ -22,7 +22,7 @@ const Home = () => {
 
     const getdata = async () => {
 
-        const res = await fetch("http://localhost:8003/getdata", {
+        const res = await fetch("https://appointmentkeeper-1.onrender.com/getdata", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -48,7 +48,7 @@ const Home = () => {
 
     const deleteuser = async (id) => {
 
-        const res2 = await fetch(`http://localhost:8003/deleteuser/${id}`, {
+        const res2 = await fetch(`https://appointmentkeeper-1.onrender.com/deleteuser/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
