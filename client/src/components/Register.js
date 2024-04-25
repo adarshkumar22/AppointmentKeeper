@@ -35,7 +35,7 @@ const Register = () => {
         const submitTime = Date.now();
         const { name, email, work, add, mobile, desc, age} = inpval;
 
-        const res = await fetch("http://localhost:8003/register", {
+        const res = await fetch("https://appointmentkeeper-1.onrender.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
