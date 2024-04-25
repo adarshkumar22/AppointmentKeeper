@@ -131,6 +131,15 @@ const Home = () => {
                                                     <p><strong>Patient Email: </strong>{element.email}</p>
                                                     <p><strong>Preferred Doctor Name: </strong>{element.work}</p>
                                                     <p><strong>Patient Mobile: </strong>{element.mobile}</p>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between">
+                                                <strong>
+                                                        <p style={{background: "#FFFFAD"}}>Submit Time: {element.submitClickTime}ms</p>
+                                                    </strong>
+                                                    <strong>
+                                                        <p style={{background: "#FFFFAD"}}>Reach Time: {element.serverReachingTime}ms</p>
+                                                    </strong>
                                                     <strong>
                                                         <p style={{background: "#FFFFAD"}}>Delay: {element.serverReachingTime - element.submitClickTime}ms</p>
                                                     </strong>
